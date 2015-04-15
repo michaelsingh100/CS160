@@ -1,0 +1,54 @@
+
+public class InteractiveSite {
+	String title;
+	String description;
+	String category;
+	String targetStudents;
+	String imgSource;
+	String link;
+	String contributor = "";
+	String contentType="";
+public InteractiveSite(String title, String description, String category, String targetStudents, String imgSource, String link){
+	this.title = title;
+	this.description = description;
+	this.category = category;
+	this.targetStudents = targetStudents;
+	this.imgSource= imgSource;
+	this.link = link;
+	contentType = "Interactive";
+	contributor = "N/A";
+}
+public String getAuthor(){
+	return contributor;
+}
+public String getContentType(){
+	return contentType;
+}
+public String getTitle(){
+	return title;
+}
+public String getDescription(){
+	return description;
+}
+public String getCategory(){
+	return category;
+}
+public String getTargetStudents(){
+	return targetStudents;
+}
+public String getImgSource(){
+	return imgSource;
+}
+public String getLink(){
+	return link;
+}
+public void print(){
+	System.out.println("Title is: "+title);
+	System.out.println("Description: "+description);
+	System.out.println("Categories: "+ category);
+	System.out.println("Target Students is "+targetStudents);
+	System.out.println("Img source is :"+ imgSource);
+	System.out.println("Link is "+link);
+	System.out.println("Contributor is "+contributor);
+}
+}
